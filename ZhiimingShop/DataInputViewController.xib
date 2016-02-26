@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DataInputViewController">
+            <connections>
+                <outlet property="loadingView" destination="Riu-j1-dk0" id="Vnc-6y-l7t"/>
+                <outlet property="tableView" destination="vYc-N4-uv6" id="PJM-he-6jI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecA-MA-obA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vYc-N4-uv6">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.66243227059999998" blue="0.17932972820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vYc-N4-uv6" secondAttribute="trailing" id="0ts-pc-v0h"/>
+                        <constraint firstItem="vYc-N4-uv6" firstAttribute="leading" secondItem="ecA-MA-obA" secondAttribute="leading" id="7eo-uY-qVh"/>
+                        <constraint firstItem="vYc-N4-uv6" firstAttribute="top" secondItem="ecA-MA-obA" secondAttribute="top" id="WYg-FF-Yb3"/>
+                        <constraint firstAttribute="bottom" secondItem="vYc-N4-uv6" secondAttribute="bottom" id="ZPb-ig-LYs"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Riu-j1-dk0">
+                    <rect key="frame" x="282" y="281" width="37" height="37"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ecA-MA-obA" secondAttribute="trailing" id="PkC-8i-KD1"/>
+                <constraint firstItem="ecA-MA-obA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QXt-gT-E7o"/>
+                <constraint firstItem="Riu-j1-dk0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZII-tI-vFV"/>
+                <constraint firstItem="Riu-j1-dk0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cjc-jt-J8z"/>
+                <constraint firstItem="ecA-MA-obA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w6C-sO-fC1"/>
+                <constraint firstAttribute="bottom" secondItem="ecA-MA-obA" secondAttribute="bottom" id="zVl-Ve-toE"/>
+            </constraints>
+            <point key="canvasLocation" x="362" y="-3779"/>
+        </view>
+    </objects>
+</document>

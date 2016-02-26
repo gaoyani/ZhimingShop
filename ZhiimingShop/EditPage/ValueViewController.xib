@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValueViewController">
+            <connections>
+                <outlet property="bgImage" destination="46u-4v-WfS" id="n5V-OG-euf"/>
+                <outlet property="value" destination="ehq-Hy-zfZ" id="2Hv-BB-BGA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abi-8Q-6WM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="46u-4v-WfS">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-Hy-zfZ">
+                            <rect key="frame" x="10" y="0.0" width="520" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="46u-4v-WfS" secondAttribute="trailing" id="1EQ-n0-rkO"/>
+                        <constraint firstAttribute="bottom" secondItem="46u-4v-WfS" secondAttribute="bottom" id="3a7-ep-SmN"/>
+                        <constraint firstItem="ehq-Hy-zfZ" firstAttribute="leading" secondItem="abi-8Q-6WM" secondAttribute="leading" constant="10" id="5nL-47-YRj"/>
+                        <constraint firstItem="46u-4v-WfS" firstAttribute="top" secondItem="abi-8Q-6WM" secondAttribute="top" id="HQk-bK-Z75"/>
+                        <constraint firstAttribute="height" constant="40" id="M1n-yL-zZb"/>
+                        <constraint firstAttribute="trailing" secondItem="ehq-Hy-zfZ" secondAttribute="trailing" constant="10" id="WQe-SI-LQo"/>
+                        <constraint firstAttribute="bottom" secondItem="ehq-Hy-zfZ" secondAttribute="bottom" id="g5x-eS-KkR"/>
+                        <constraint firstItem="ehq-Hy-zfZ" firstAttribute="top" secondItem="abi-8Q-6WM" secondAttribute="top" id="ong-Vl-v7D"/>
+                        <constraint firstItem="46u-4v-WfS" firstAttribute="leading" secondItem="abi-8Q-6WM" secondAttribute="leading" id="oop-hm-5Ko"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="abi-8Q-6WM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7JM-oG-ydX"/>
+                <constraint firstAttribute="trailing" secondItem="abi-8Q-6WM" secondAttribute="trailing" id="GRJ-Qu-6dB"/>
+                <constraint firstItem="abi-8Q-6WM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M3w-fT-fN4"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
